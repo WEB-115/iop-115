@@ -7,3 +7,6 @@ inside out project version 100.0
  
  inside out project version 100.1
   -added footer
+  
+  iop v100.2-bug-fixes
+  	-made bug fixes to the footer copyright section by adding a row -also added padding to the bottom_ul tag to center the menu
