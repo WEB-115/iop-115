@@ -96,6 +96,7 @@ footer {
   list-style-type: none;
   float: right;
   margin-bottom: 0px;
+  padding-top: 4px;
 }
 .bottom_ul li {
   float: left;
@@ -111,7 +112,6 @@ footer {
   color: #FFF;
   font-size: 12px;
 }
-
 /* 
 https://bootsnipp.com/snippets/1KEEq
 footer 2
