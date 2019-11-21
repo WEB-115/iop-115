@@ -22,3 +22,6 @@ iop 101-0
 
 102-1
 -completed css for navigation
+
+103-0
+-added loaderDiv to index.html and added styles for it in style.css file -added onto app.js by allowing the loaderDiv to disappear once the nav bar has fully loaded
