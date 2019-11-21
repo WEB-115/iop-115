@@ -16,3 +16,6 @@ iop 101-0
 -created assets/js/app.js
 -created assets/data/menu.json
 -moved header resize javascript to app.js
+
+102-0
+-added menu.json -added app.js to control how to menu items came in -added menuBuilder function with recursion
