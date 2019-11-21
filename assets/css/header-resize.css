@@ -186,7 +186,10 @@ header.smaller h1#logo {
   font-size: 30px;
 }
 header.smaller nav a {
+	/*
   line-height: 75px;
+	*/
+	line-height: 32px;
 }
 /* =Footer
 -------------------------------------------------------------- */
