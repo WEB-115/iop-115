@@ -19,3 +19,6 @@ iop 101-0
 
 102-0
 -added menu.json -added app.js to control how to menu items came in -added menuBuilder function with recursion
+
+102-1
+-completed css for navigation
