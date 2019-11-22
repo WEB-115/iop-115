@@ -18,13 +18,15 @@ function init() {
 
   $.ajax({
     method: 'GET',
-    url: 'assets/data/menu.json',
+    url: 'https://inside-out-wp.webdesigneralex.com/wp-json/menus/v1/locations/primary',
     dataType: 'json',
     success: function (data) {
+		
+		$('nav').hide();
 
-      var menu = menuBuilder(data.menu)
+      var menu = menuBuilder(data.items)
 
-      $('nav').append(menu);
+      $('nav').html(menu).slideDown();
 		$('#loaderDiv').fadeOut("slow");
 		
     },
@@ -47,10 +49,10 @@ function menuBuilder(obj) {
 
     obj.forEach(function (item) {
 
-      theMenu = theMenu + '<li><a href="#">' + item.MenuName + '</a>';
+      theMenu = theMenu + '<li><a href="#">' + item.title + '</a>';
 
-      if (item.Menus.length > 0) {
-        theMenu = theMenu + menuBuilder(item.Menus);
+      if (item.child_items) {
+        theMenu = theMenu + menuBuilder(item.child_items);
       }
       theMenu = theMenu + '</li>';
     });
